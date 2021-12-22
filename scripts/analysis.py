@@ -8,17 +8,12 @@ from datetime import date, datetime
 # Returns the current local date
 today = date.today()
 
-def addition(x,y):
-    z=x+y
-    return z
-
-# def read_invoices():
-#     # in: link
-#     # out: dataframe
-#     invoices_data=pd.read_csv('../data/invoices.csv')
-#     return invoices_data
-
 def count_unique_rows(df):
+    # in: dataframe
+    # out: dataframe
+    return df['id'].drop_duplicates().shape[0]
+
+def no_unpaid_invoices(df):
     # in: dataframe
     # out: dataframe
     unpaid_invoices=df[df['status']=="UNPAID"]
