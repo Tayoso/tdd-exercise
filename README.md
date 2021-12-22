@@ -1,10 +1,6 @@
 Pairing Exercise: Python
 ========================
 
-This is a pairing exercise for prospective full-stack/back-end developers with a focus on Python.
-
-The candidate can guide the exercise and do as much as is feasible within the time limit (~30-35 mins).
-
 ## Goal
 
 Process a list of invoices and produce the following statistics:
