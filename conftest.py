@@ -1,15 +1,8 @@
-# import numpy as np
-# import pandas as pd
+import numpy as np
+import pandas as pd
 # # Import date, datetime class from datetime module
 # from datetime import date, datetime
 import pytest
-
-# @pytest.fixture()
-# def read_invoices():
-#     # in: link
-#     # out: dataframe
-#     invoices_data=pd.read_csv('../data/invoices.csv')
-#     return invoices_data
 
 @pytest.fixture()
 def x():
@@ -18,3 +11,10 @@ def x():
 @pytest.fixture()
 def y():
     return 3
+
+@pytest.fixture()
+def read_invoices():
+    # in: link
+    # out: dataframe
+    df=pd.read_csv('./data/invoices.csv')
+    return df

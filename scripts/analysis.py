@@ -12,11 +12,11 @@ def addition(x,y):
     z=x+y
     return z
 
-def read_invoices(data):
-    # in: link
-    # out: dataframe
-    invoices_data=pd.read_csv(data)
-    return invoices_data
+# def read_invoices():
+#     # in: link
+#     # out: dataframe
+#     invoices_data=pd.read_csv('../data/invoices.csv')
+#     return invoices_data
 
 def count_unique_rows(df):
     # in: dataframe
